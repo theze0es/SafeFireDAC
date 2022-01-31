@@ -2,6 +2,7 @@
 A couple of classes that enables the use of smart pointers with FireDAC in C++ (TFDConnection and TFDQuery) 
 
 Put a connection on the stack
+
 	TSharedSafeConnection c2=MakeSharedSafeConnection;
 	c2->Connection->DriverName="PG";
 	c2->Connection->LoginPrompt=false;
