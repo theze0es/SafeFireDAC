@@ -28,6 +28,7 @@ Executing a query on the stack adjusting some parameters
 
 
 A less direct way:
+
 	std::shared_ptr<TSafeConnection> c = std::make_shared<TSafeConnection>();
 	c->Connection->DriverName="PG";
 	c->Connection->LoginPrompt=false;
@@ -43,6 +44,7 @@ A less direct way:
 
 
 A more indirect way:
+
 	std::shared_ptr<TSafeQuery> q2 (new TSafeQuery(nullptr));
 	q2->AssignConnection(c);
 	q2->SQL->Add("select count(*) as cnt from cdr.utenti");
