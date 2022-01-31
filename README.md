@@ -1,16 +1,14 @@
 # SafeFireDAC
 A couple of classes that enables the use of smart pointers with FireDAC in C++ (TFDConnection and TFDQuery) 
 
-//Put a connection on the stack
-TSharedSafeConnection c2=MakeSharedSafeConnection;
-c2->Connection->DriverName="PG";
-c2->Connection->LoginPrompt=false;
-c2->Connection->ConnectionDefName="cdr";
-c2->Connection->Params->Password="password-example";
-c2->Connection->Params->UserName="postgres";
-c2->Connection->Connected=true;
-
-
+	//Put a connection on the stack
+	TSharedSafeConnection c2=MakeSharedSafeConnection;
+	c2->Connection->DriverName="PG";
+	c2->Connection->LoginPrompt=false;
+	c2->Connection->ConnectionDefName="cdr";
+	c2->Connection->Params->Password="password-example";
+	c2->Connection->Params->UserName="postgres";
+	c2->Connection->Connected=true;
 	{
 	//executes a query on the stack
 	TSharedSafeQuery q4 = c2->MakeNewQuery("select count(*) as cnt from cdr.utenti",true);
