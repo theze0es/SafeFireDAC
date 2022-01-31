@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/09/20 12:27:11.000.860,=C:\Users\Dev\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020/09/20 12:27:11.000.772,=C:\Users\Dev\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/09/20 12:27:48.000.330,C:\butta\SafeFireDac\Unit1.cpp=C:\Users\Dev\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2020/09/20 12:27:48.000.330,C:\butta\SafeFireDac\Unit1.h=C:\Users\Dev\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2020/09/20 12:27:48.000.330,C:\butta\SafeFireDac\Unit1.dfm=C:\Users\Dev\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/09/20 12:27:50.000.366,C:\butta\SafeFireDac\Project1PCH1.h=C:\Users\Dev\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2020/09/20 12:27:52.000.175,C:\butta\SafeFireDac\Project1.cbproj=C:\Users\Dev\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2020/09/20 12:30:19.000.160,=C:\butta\SafeFireDac\Unit2.cpp</Transaction>
+    <Transaction>2020/09/20 12:30:47.000.505,C:\butta\SafeFireDac\uSafeFiredac.h=C:\butta\SafeFireDac\Unit2.h</Transaction>
+    <Transaction>2020/09/20 12:30:47.000.505,C:\butta\SafeFireDac\uSafeFiredac.cpp=C:\butta\SafeFireDac\Unit2.cpp</Transaction>
+    <Transaction>2020/09/20 12:45:49.000.499,=C:\butta\SafeFireDac\Unit2.cpp</Transaction>
+    <Transaction>2020/09/20 12:46:03.000.399,C:\butta\SafeFireDac\Unit2.h=C:\butta\SafeFireDac\uSafeConnection.h</Transaction>
+    <Transaction>2020/09/20 12:46:03.000.399,C:\butta\SafeFireDac\Unit2.cpp=C:\butta\SafeFireDac\uSafeConnection.cpp</Transaction>
+    <Transaction>2020/09/20 12:46:44.000.625,=C:\butta\SafeFireDac\Unit2.cpp</Transaction>
+    <Transaction>2020/09/20 12:46:50.000.747,C:\butta\SafeFireDac\Unit2.cpp=C:\butta\SafeFireDac\uSafeQuery.cpp</Transaction>
+    <Transaction>2020/09/20 12:46:50.000.747,C:\butta\SafeFireDac\Unit2.h=C:\butta\SafeFireDac\uSafeQuery.h</Transaction>
+    <Transaction>2020/09/20 12:47:41.000.766,C:\butta\SafeFireDac\uSafeFiredac.cpp=</Transaction>
+    <Transaction>2020/11/10 17:46:45.000.516,C:\butta\SafeFireDac\Unit1.dfm=C:\butta\SafeFireDac\testSafeConnection.dfm</Transaction>
+    <Transaction>2020/11/10 17:46:45.000.516,C:\butta\SafeFireDac\Unit1.h=C:\butta\SafeFireDac\testSafeConnection.h</Transaction>
+    <Transaction>2020/11/10 17:46:45.000.516,C:\butta\SafeFireDac\Unit1.cpp=C:\butta\SafeFireDac\testSafeConnection.cpp</Transaction>
+  </Transactions>
+</BorlandProject>
