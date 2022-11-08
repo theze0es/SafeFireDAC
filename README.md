@@ -3,32 +3,33 @@ A couple of classes that enables the use of smart pointers with FireDAC in C++ (
 
 Put a connection on the stack
 
-	TSharedSafeConnection c2=MakeSharedSafeConnection;
-	c2->Connection->DriverName="PG";
-	c2->Connection->LoginPrompt=false;
-	c2->Connection->ConnectionDefName="cdr";
-	c2->Connection->Params->Password="password-example";
-	c2->Connection->Params->UserName="postgres";
-	c2->Connection->Connected=true;
+	TSharedSafeConnection sf=MakeSharedSafeConnection;
+	sf->Connection->DriverName="PG";
+	sf->Connection->LoginPrompt=false;
+	sf->Connection->ConnectionDefName="mydb";
+	sf->Connection->Params->Password="password-example";
+	sf->Connection->Params->UserName="postgres";
+	sf->Connection->Connected=true;
 
-How to use it:
+Quick and simple use:
 
 	{
 	//executes a query on the stack
-	TSharedSafeQuery q4 = c2->MakeNewQuery("select count(*) as cnt from cdr.utenti",true);
+	TSharedSafeQuery q4 = sf->MakeNewQuery("select count(*) as cnt from cdr.utenti",true);
 	ShowMessage(q4->FieldByName("cnt")->AsString+" con q4");
 	}
 	//now q4 does not exists anymore.
 
-Executing a query on the stack adjusting some parameters
+Quick and simple use with some SQL parameters:
 
-	TSharedSafeQuery q3 = c2->MakeNewQuery("select count(*) as cnt from cdr.utenti");
+	TSharedSafeQuery q3 = sf->MakeNewQuery("select count(*) as cnt from cdr.utenti where username=:user");
 	q3->UpdateOptions->AutoIncFields="key_operatore";
+	q3->ParamByName("user")->AsString="Bob";
 	q3->Active=true;
 	ShowMessage(q3->FieldByName("cnt")->AsString+" con q3");
 
-
-A less direct way:
+That is. 
+If you're interested in a less direct way:
 
 	std::shared_ptr<TSafeConnection> c = std::make_shared<TSafeConnection>();
 	c->Connection->DriverName="PG";
@@ -44,7 +45,7 @@ A less direct way:
 	ShowMessage(q1->FieldByName("cnt")->AsString+" con q1");
 
 
-A more indirect way:
+Or even a more indirect way:
 
 	std::shared_ptr<TSafeQuery> q2 (new TSafeQuery(nullptr));
 	q2->AssignConnection(c);
